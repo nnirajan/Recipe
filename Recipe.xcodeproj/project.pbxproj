@@ -3,14 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9184F47F26ECFC1F00F9A5FE /* RecipeListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F46C26ECFC1F00F9A5FE /* RecipeListModuleInterface.swift */; };
+		9184F48026ECFC1F00F9A5FE /* RecipeListServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F46F26ECFC1F00F9A5FE /* RecipeListServiceType.swift */; };
+		9184F48126ECFC1F00F9A5FE /* RecipeListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47026ECFC1F00F9A5FE /* RecipeListService.swift */; };
+		9184F48226ECFC1F00F9A5FE /* RecipeListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47226ECFC1F00F9A5FE /* RecipeListInteractorIO.swift */; };
+		9184F48326ECFC1F00F9A5FE /* RecipeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47326ECFC1F00F9A5FE /* RecipeListInteractor.swift */; };
+		9184F48426ECFC1F00F9A5FE /* RecipeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47626ECFC1F00F9A5FE /* RecipeListPresenter.swift */; };
+		9184F48526ECFC1F00F9A5FE /* RecipeListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47826ECFC1F00F9A5FE /* RecipeListWireframe.swift */; };
+		9184F48626ECFC1F00F9A5FE /* RecipeListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47926ECFC1F00F9A5FE /* RecipeListWireframeInput.swift */; };
+		9184F48726ECFC1F00F9A5FE /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47C26ECFC1F00F9A5FE /* RecipeListViewController.swift */; };
+		9184F48826ECFC1F00F9A5FE /* RecipeListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F47D26ECFC1F00F9A5FE /* RecipeListViewInterface.swift */; };
+		9184F48926ECFC1F00F9A5FE /* RecipeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9184F47E26ECFC1F00F9A5FE /* RecipeList.storyboard */; };
+		9184F48E26ECFC8A00F9A5FE /* WireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9184F48D26ECFC8A00F9A5FE /* WireframeInput.swift */; };
 		91E9535826EC83FB002E34DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9535726EC83FB002E34DB /* AppDelegate.swift */; };
-		91E9535A26EC83FB002E34DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9535926EC83FB002E34DB /* SceneDelegate.swift */; };
-		91E9535C26EC83FB002E34DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9535B26EC83FB002E34DB /* ViewController.swift */; };
-		91E9535F26EC83FB002E34DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E9535D26EC83FB002E34DB /* Main.storyboard */; };
 		91E9536126EC83FC002E34DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536026EC83FC002E34DB /* Assets.xcassets */; };
 		91E9536426EC83FC002E34DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536226EC83FC002E34DB /* LaunchScreen.storyboard */; };
 		CFB950E29CA213273AA098DB /* Pods_Recipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66830E90043E7CE6BB853C57 /* Pods_Recipe.framework */; };
@@ -18,11 +27,20 @@
 
 /* Begin PBXFileReference section */
 		66830E90043E7CE6BB853C57 /* Pods_Recipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9184F46C26ECFC1F00F9A5FE /* RecipeListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListModuleInterface.swift; sourceTree = "<group>"; };
+		9184F46F26ECFC1F00F9A5FE /* RecipeListServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListServiceType.swift; sourceTree = "<group>"; };
+		9184F47026ECFC1F00F9A5FE /* RecipeListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListService.swift; sourceTree = "<group>"; };
+		9184F47226ECFC1F00F9A5FE /* RecipeListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListInteractorIO.swift; sourceTree = "<group>"; };
+		9184F47326ECFC1F00F9A5FE /* RecipeListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListInteractor.swift; sourceTree = "<group>"; };
+		9184F47626ECFC1F00F9A5FE /* RecipeListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListPresenter.swift; sourceTree = "<group>"; };
+		9184F47826ECFC1F00F9A5FE /* RecipeListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListWireframe.swift; sourceTree = "<group>"; };
+		9184F47926ECFC1F00F9A5FE /* RecipeListWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListWireframeInput.swift; sourceTree = "<group>"; };
+		9184F47C26ECFC1F00F9A5FE /* RecipeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		9184F47D26ECFC1F00F9A5FE /* RecipeListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewInterface.swift; sourceTree = "<group>"; };
+		9184F47E26ECFC1F00F9A5FE /* RecipeList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecipeList.storyboard; sourceTree = "<group>"; };
+		9184F48D26ECFC8A00F9A5FE /* WireframeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInput.swift; sourceTree = "<group>"; };
 		91E9535426EC83FB002E34DB /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9535726EC83FB002E34DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91E9535926EC83FB002E34DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91E9535B26EC83FB002E34DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		91E9535E26EC83FB002E34DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E9536026EC83FC002E34DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E9536326EC83FC002E34DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E9536526EC83FC002E34DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +68,112 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9184F46026ECFBF700F9A5FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9184F46126ECFC0B00F9A5FE /* Recipe List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9184F46126ECFC0B00F9A5FE /* Recipe List */ = {
+			isa = PBXGroup;
+			children = (
+				9184F46B26ECFC1F00F9A5FE /* Module Interface */,
+				9184F46D26ECFC1F00F9A5FE /* Application Logic */,
+				9184F47426ECFC1F00F9A5FE /* User Interface */,
+			);
+			path = "Recipe List";
+			sourceTree = "<group>";
+		};
+		9184F46B26ECFC1F00F9A5FE /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9184F46C26ECFC1F00F9A5FE /* RecipeListModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		9184F46D26ECFC1F00F9A5FE /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9184F46E26ECFC1F00F9A5FE /* Service */,
+				9184F47126ECFC1F00F9A5FE /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		9184F46E26ECFC1F00F9A5FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9184F46F26ECFC1F00F9A5FE /* RecipeListServiceType.swift */,
+				9184F47026ECFC1F00F9A5FE /* RecipeListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9184F47126ECFC1F00F9A5FE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9184F47226ECFC1F00F9A5FE /* RecipeListInteractorIO.swift */,
+				9184F47326ECFC1F00F9A5FE /* RecipeListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9184F47426ECFC1F00F9A5FE /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9184F47526ECFC1F00F9A5FE /* Presenter */,
+				9184F47726ECFC1F00F9A5FE /* Wireframe */,
+				9184F47A26ECFC1F00F9A5FE /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		9184F47526ECFC1F00F9A5FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9184F47626ECFC1F00F9A5FE /* RecipeListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9184F47726ECFC1F00F9A5FE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				9184F47826ECFC1F00F9A5FE /* RecipeListWireframe.swift */,
+				9184F47926ECFC1F00F9A5FE /* RecipeListWireframeInput.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		9184F47A26ECFC1F00F9A5FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9184F47B26ECFC1F00F9A5FE /* ViewModels */,
+				9184F47C26ECFC1F00F9A5FE /* RecipeListViewController.swift */,
+				9184F47D26ECFC1F00F9A5FE /* RecipeListViewInterface.swift */,
+				9184F47E26ECFC1F00F9A5FE /* RecipeList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9184F47B26ECFC1F00F9A5FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9184F48C26ECFC7800F9A5FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9184F48D26ECFC8A00F9A5FE /* WireframeInput.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		91E9534B26EC83FB002E34DB = {
 			isa = PBXGroup;
 			children = (
@@ -71,10 +195,9 @@
 		91E9535626EC83FB002E34DB /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				9184F48C26ECFC7800F9A5FE /* Resources */,
+				9184F46026ECFBF700F9A5FE /* Modules */,
 				91E9535726EC83FB002E34DB /* AppDelegate.swift */,
-				91E9535926EC83FB002E34DB /* SceneDelegate.swift */,
-				91E9535B26EC83FB002E34DB /* ViewController.swift */,
-				91E9535D26EC83FB002E34DB /* Main.storyboard */,
 				91E9536026EC83FC002E34DB /* Assets.xcassets */,
 				91E9536226EC83FC002E34DB /* LaunchScreen.storyboard */,
 				91E9536526EC83FC002E34DB /* Info.plist */,
@@ -88,7 +211,6 @@
 				AD80E81D89D0581455786DAA /* Pods-Recipe.debug.xcconfig */,
 				F61193C475634F1713CC58C7 /* Pods-Recipe.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,9 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9184F48926ECFC1F00F9A5FE /* RecipeList.storyboard in Resources */,
 				91E9536426EC83FC002E34DB /* LaunchScreen.storyboard in Resources */,
 				91E9536126EC83FC002E34DB /* Assets.xcassets in Resources */,
-				91E9535F26EC83FB002E34DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,23 +328,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E9535C26EC83FB002E34DB /* ViewController.swift in Sources */,
+				9184F48426ECFC1F00F9A5FE /* RecipeListPresenter.swift in Sources */,
+				9184F48326ECFC1F00F9A5FE /* RecipeListInteractor.swift in Sources */,
+				9184F48726ECFC1F00F9A5FE /* RecipeListViewController.swift in Sources */,
+				9184F48E26ECFC8A00F9A5FE /* WireframeInput.swift in Sources */,
+				9184F48226ECFC1F00F9A5FE /* RecipeListInteractorIO.swift in Sources */,
+				9184F48826ECFC1F00F9A5FE /* RecipeListViewInterface.swift in Sources */,
+				9184F47F26ECFC1F00F9A5FE /* RecipeListModuleInterface.swift in Sources */,
+				9184F48526ECFC1F00F9A5FE /* RecipeListWireframe.swift in Sources */,
+				9184F48126ECFC1F00F9A5FE /* RecipeListService.swift in Sources */,
+				9184F48026ECFC1F00F9A5FE /* RecipeListServiceType.swift in Sources */,
 				91E9535826EC83FB002E34DB /* AppDelegate.swift in Sources */,
-				91E9535A26EC83FB002E34DB /* SceneDelegate.swift in Sources */,
+				9184F48626ECFC1F00F9A5FE /* RecipeListWireframeInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		91E9535D26EC83FB002E34DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91E9535E26EC83FB002E34DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		91E9536226EC83FC002E34DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
