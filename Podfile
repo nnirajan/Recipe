@@ -10,5 +10,6 @@ target 'Recipe' do
 	pod 'Alamofire'
 	pod 'SkeletonView'
 	pod 'RealmSwift', '=10.1.4'
+  pod 'Kingfisher'
 
 end

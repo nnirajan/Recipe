@@ -30,6 +30,7 @@
 		91C0ABA226EE1DCE000B0952 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ABA126EE1DCE000B0952 /* Shop.swift */; };
 		91C0ABA626EE1E16000B0952 /* ShopListStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ABA526EE1E16000B0952 /* ShopListStructure.swift */; };
 		91C0ABAA26EE1E26000B0952 /* ShopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ABA926EE1E26000B0952 /* ShopListViewModel.swift */; };
+		91C0ABAD26EE1EE3000B0952 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0ABAC26EE1EE3000B0952 /* UIImageView+Extension.swift */; };
 		91E9535826EC83FB002E34DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9535726EC83FB002E34DB /* AppDelegate.swift */; };
 		91E9536126EC83FC002E34DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536026EC83FC002E34DB /* Assets.xcassets */; };
 		91E9536426EC83FC002E34DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536226EC83FC002E34DB /* LaunchScreen.storyboard */; };
@@ -61,6 +62,7 @@
 		91C0ABA126EE1DCE000B0952 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		91C0ABA526EE1E16000B0952 /* ShopListStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListStructure.swift; sourceTree = "<group>"; };
 		91C0ABA926EE1E26000B0952 /* ShopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListViewModel.swift; sourceTree = "<group>"; };
+		91C0ABAC26EE1EE3000B0952 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		91E9535426EC83FB002E34DB /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9535726EC83FB002E34DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E9536026EC83FC002E34DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			children = (
 				91C0AB8F26EDDFE5000B0952 /* UITableView+Extension.swift */,
 				91C0AB9326EDE31C000B0952 /* Array+Extension.swift */,
+				91C0ABAC26EE1EE3000B0952 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				91C0AB8026EDD934000B0952 /* ShopListWireframe.swift in Sources */,
 				91C0AB7E26EDD934000B0952 /* ShopListInteractorIO.swift in Sources */,
 				91E9535826EC83FB002E34DB /* AppDelegate.swift in Sources */,
+				91C0ABAD26EE1EE3000B0952 /* UIImageView+Extension.swift in Sources */,
 				91C0AB8226EDD934000B0952 /* ShopListViewInterface.swift in Sources */,
 				91C0ABAA26EE1E26000B0952 /* ShopListViewModel.swift in Sources */,
 				91C0ABA226EE1DCE000B0952 /* Shop.swift in Sources */,
