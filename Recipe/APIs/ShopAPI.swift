@@ -18,7 +18,8 @@ extension ShopAPI {
     func getShops(ofPage: Int, success: @escaping ([Shop], APIPagination?)->(), failure: @escaping (Error)->()) {
         /// sendSuccess
         func sendSuccess(pagination: APIPagination?) {
-            let realmModels: [ShopRealmModel] = self.fetch()
+//            let realmModels: [ShopRealmModel] = self.fetch()
+            let realmModels: [ShopRealmModel] = self.fetch(sortedBy: ("lid", true))
             let normalModels = realmModels.map({ $0.normalModel() })
             success(normalModels, pagination)
         }
@@ -62,4 +63,3 @@ extension ShopAPI {
     }
     
 }
-

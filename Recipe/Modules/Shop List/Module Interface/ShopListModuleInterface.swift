@@ -9,4 +9,5 @@
 protocol ShopListModuleInterface: class {
     func viewIsReady(isRefreshing: Bool)
     func getMoreData()
+    func gotoProductDetailScreen(id: Int)
 }

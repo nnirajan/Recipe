@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ShopListWireframeInput: WireframeInput {
-    
+    func openProductDetailScreen(id: Int)
 }

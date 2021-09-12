@@ -38,7 +38,7 @@ class ShopListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.title = "shop list"
+        navigationItem.title = "SHOP LIST"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -116,7 +116,7 @@ extension ShopListViewController: ShopListViewInterface {
 }
 
 // MARK: SkeletonTableViewDataSource
-extension ShopListViewController: UITableViewDataSource {
+extension ShopListViewController: SkeletonTableViewDataSource {
     
     /// sekeletonview
     func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -146,9 +146,9 @@ extension ShopListViewController: UITableViewDataSource {
 extension ShopListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let restaurantViewModel = restaurantCategoryViewModel?.subcategories.element(at: indexPath.item) {
-//            presenter?.gotoRestaurantContainerScreen(id: restaurantViewModel.id)
-//        }
+        if let shopListViewModel = shopListViewModels.element(at: indexPath.item) {
+            presenter?.gotoProductDetailScreen(id: shopListViewModel.id)
+        }
     }
     
     // MARK: for show loading at bottom for pagination

@@ -11,6 +11,7 @@ import Alamofire
 // MARK: EndPoint
 enum EndPoint {
     case shops(ofPage: Int)
+    case productDetail(id: Int)
 
     var fieldsParams: String {
         "fields=id,title,image_url,description,last_updated,last_updated_source"
@@ -27,7 +28,7 @@ enum EndPoint {
     // MARK: HTTPMethod
     var method: HTTPMethod {
         switch self {
-        case .shops:
+        case .shops, .productDetail:
             return .get
         }
     }
@@ -37,14 +38,8 @@ enum EndPoint {
         switch self {
         case .shops(let ofPage):
             return "products?\(fieldsParams)&\(sort)&\(limit)&page=\(ofPage)"
-        }
-    }
-    
-    // MARK: needsAuthorization
-    var needsAuthorization: Bool {
-        switch self {
-            default:
-                return false
+        case .productDetail(let id):
+            return "products/\(id)?\(fieldsParams)"
         }
     }
     

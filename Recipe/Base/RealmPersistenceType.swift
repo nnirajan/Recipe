@@ -27,6 +27,13 @@ extension RealmPersistenceType {
         }
     }
     
+    func update(models: [Object]) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(models, update: .modified)
+        }
+    }
+    
     func fetch<T: Object>() -> [T] {
         let realm = try! Realm()
         let values = realm.objects(T.self)

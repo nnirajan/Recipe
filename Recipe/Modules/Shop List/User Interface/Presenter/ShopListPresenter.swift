@@ -36,15 +36,19 @@ extension ShopListPresenter: ShopListModuleInterface {
         interactor?.getMoreShops()
     }
     
+    func gotoProductDetailScreen(id: Int) {
+        wireframe?.openProductDetailScreen(id: id)
+    }
+    
 }
 
 // MARK: ShopList interactor output interface
 extension ShopListPresenter: ShopListInteractorOutput {
 
     func shopObtained(models: [ShopListStructure], total: Int) {
-        view?.hideSkeletonLoading()
         let viewModels = models.map(convert)
         view?.showShopList(models: viewModels, total: total)
+        view?.hideSkeletonLoading()
     }
     
 }

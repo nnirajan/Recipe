@@ -37,13 +37,14 @@ class ShopListTableViewCell: UITableViewCell {
     
     // MARK: setupimageview
     private func setupImageView() {
-//        productImageView.set(cornerRadius: 8)
+        shopImageView.set(cornerRadius: 8)
+        shopImageView.set(borderWidth: 1, of: CustomColors.borderColor)
     }
     
     // MARK: setupLabels
     private func setupLabels() {
         /// titleLabel
-//        titleLabel.textColor = .offerTextColor
+        titleLabel.textColor = CustomColors.textColor
 //        titleLabel.font = CustomFont.medium.font(ofHeading: .heading3)
     }
     

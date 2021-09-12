@@ -46,7 +46,7 @@ class ShopRealmModel: Object {
     @objc dynamic var lastUpdatedSource: String = ""
     
     override class func primaryKey() -> String? {
-        return "lid"
+        return "id"
     }
     
     func incrementaID() -> Int{
@@ -54,7 +54,7 @@ class ShopRealmModel: Object {
     }
     
     func normalModel() -> Shop {
-        let normalModel = Shop(id: id, title: title, imageURL: imageURL, description: description, lastUpdated: lastUpdated, lastUpdatedSource: lastUpdatedSource)
+        let normalModel = Shop(id: id, title: title, imageURL: imageURL, description: shopDescription, lastUpdated: lastUpdated, lastUpdatedSource: lastUpdatedSource)
         return normalModel
     }
 }

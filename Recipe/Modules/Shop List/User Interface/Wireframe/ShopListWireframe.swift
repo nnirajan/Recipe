@@ -9,7 +9,8 @@
 import UIKit
 
 class ShopListWireframe {
-     weak var view: UIViewController!
+    weak var view: UIViewController!
+    private lazy var productDetailWireframe: ProductDetailWireframeInput = {ProductDetailWireframe()}()
 }
 
 extension ShopListWireframe: ShopListWireframeInput {
@@ -31,4 +32,11 @@ extension ShopListWireframe: ShopListWireframeInput {
         self.view = viewController
         return viewController
     }
+    
+    func openProductDetailScreen(id: Int) {
+        if let navVC = view.navigationController {
+            productDetailWireframe.openProductDetail(id: id, source: navVC)
+        }
+    }
+    
 }
