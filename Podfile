@@ -6,7 +6,6 @@ target 'Recipe' do
   use_frameworks!
 
   # Pods for Recipe
-	pod 'IQKeyboardManagerSwift'
 	pod 'Alamofire'
 	pod 'SkeletonView'
 	pod 'RealmSwift', '=10.1.4'

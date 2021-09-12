@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (5.4.1)
-  - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (6.2.1)
   - Realm (10.1.4):
     - Realm/Headers (= 10.1.4)
@@ -11,7 +10,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - IQKeyboardManagerSwift
   - Kingfisher
   - RealmSwift (= 10.1.4)
   - SkeletonView
@@ -19,7 +17,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - IQKeyboardManagerSwift
     - Kingfisher
     - Realm
     - RealmSwift
@@ -27,12 +24,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
   RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
   SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
 
-PODFILE CHECKSUM: b45aa0dae1e416c5156ab01ee79c0313afe587d7
+PODFILE CHECKSUM: dba5a9ed00b3230fe36da18f7370841aabefcc2e
 
 COCOAPODS: 1.10.1
