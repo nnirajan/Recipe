@@ -106,8 +106,8 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <outlet property="shopImageView" destination="vgR-lQ-NlQ" id="Z19-iH-wsL"/>
                                             <outlet property="titleLabel" destination="jIy-Iy-gee" id="SKa-mI-lcu"/>
-                                            <outlet property="tourImageView" destination="vgR-lQ-NlQ" id="Z19-iH-wsL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

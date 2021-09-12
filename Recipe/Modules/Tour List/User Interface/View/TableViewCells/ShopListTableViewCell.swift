@@ -10,7 +10,7 @@ import UIKit
 class ShopListTableViewCell: UITableViewCell {
 
     // MARK: properties
-    var tourListViewModel: ShopListViewModel? {
+    var shopListViewModel: ShopListViewModel? {
         didSet {
             setupData()
         }
@@ -18,7 +18,7 @@ class ShopListTableViewCell: UITableViewCell {
     
     // MARK: IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var tourImageView: UIImageView!
+    @IBOutlet weak var shopImageView: UIImageView!
 
     // MARK: cell lifecycle
     override func awakeFromNib() {
@@ -49,8 +49,7 @@ class ShopListTableViewCell: UITableViewCell {
     
     // MARK: setupData
     private func setupData() {
-        titleLabel.text = tourListViewModel?.title
-//        tourImageView
+        titleLabel.text = shopListViewModel?.title
     }
     
 }

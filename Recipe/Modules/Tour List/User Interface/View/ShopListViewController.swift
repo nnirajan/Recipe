@@ -21,7 +21,7 @@ class ShopListViewController: UIViewController {
         return refreshControl
     }()
     
-    private var tourListViewModels = [ShopListViewModel]()
+    private var shopListViewModels = [ShopListViewModel]()
     
     private var isMoreDataAvailable: Bool = false
     
@@ -37,7 +37,7 @@ class ShopListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.title = "tour list"
+        navigationItem.title = "shop list"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -76,7 +76,7 @@ class ShopListViewController: UIViewController {
     
 }
 
-// MARK: TourListViewInterface
+// MARK: ShopListViewController
 extension ShopListViewController: ShopListViewInterface {
     
     func showSkeletonLoading() {
@@ -87,10 +87,10 @@ extension ShopListViewController: ShopListViewInterface {
         view.hideSkeleton()
     }
     
-    func showTourList(models: [ShopListViewModel], total: Int) {
+    func showShopList(models: [ShopListViewModel], total: Int) {
         refreshControl.endRefreshing()
-        tourListViewModels = models
-        if tourListViewModels.count < total {
+        shopListViewModels = models
+        if shopListViewModels.count < total {
             isMoreDataAvailable = true
         } else {
             isMoreDataAvailable = false
@@ -114,14 +114,14 @@ extension ShopListViewController: SkeletonTableViewDataSource {
     
     /// tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tourListViewModels.count
+        return shopListViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tourListViewModel = tourListViewModels.element(at: indexPath.item)
+        let shopListViewModel = shopListViewModels.element(at: indexPath.item)
         
         let cell: ShopListTableViewCell = tableView.dequeueCell()
-        cell.tourListViewModel = tourListViewModel
+        cell.shopListViewModel = shopListViewModel
         return cell
     }
     

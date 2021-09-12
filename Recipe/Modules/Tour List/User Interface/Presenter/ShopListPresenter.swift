@@ -29,11 +29,11 @@ extension ShopListPresenter: ShopListModuleInterface {
         if !isRefreshing {
             view?.showSkeletonLoading()
         }
-        interactor?.getTours()
+        interactor?.getShops()
     }
     
     func getMoreData() {
-        interactor?.getMoreTours()
+        interactor?.getMoreShops()
     }
     
 }
@@ -41,9 +41,9 @@ extension ShopListPresenter: ShopListModuleInterface {
 // MARK: ShopList interactor output interface
 extension ShopListPresenter: ShopListInteractorOutput {
 
-    func tourObtained(models: [ShopListStructure], total: Int) {
+    func shopObtained(models: [ShopListStructure], total: Int) {
         let viewModels = models.map(convert)
-        view?.showTourList(models: viewModels, total: total)
+        view?.showShopList(models: viewModels, total: total)
         view?.hideSkeletonLoading()
     }
     

@@ -32,26 +32,26 @@ class ShopListInteractor {
 // MARK: ShopList interactor input interface
 extension ShopListInteractor: ShopListInteractorInput {
     
-    func getTours() {
+    func getShops() {
         page = 1
-        service.getShops(ofPage: page, success: { [weak self] (tours, pagination) in
+        service.getShops(ofPage: page, success: { [weak self] (shops, pagination) in
             guard let self = self else { return }
             self.page += 1
-            let structures = tours.map(self.convert)
+            let structures = shops.map(self.convert)
             self.shopListStructures = structures
-            self.output?.tourObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
+            self.output?.shopObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
         }) { [weak self] (error) in
             guard let self = self else { return }
         }
     }
     
-    func getMoreTours() {
-        service.getShops(ofPage: page, success: { [weak self] (tours, pagination) in
+    func getMoreShops() {
+        service.getShops(ofPage: page, success: { [weak self] (shops, pagination) in
             guard let self = self else { return }
             self.page += 1
-            let structures = tours.map(self.convert)
+            let structures = shops.map(self.convert)
             self.shopListStructures = structures
-            self.output?.tourObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
+            self.output?.shopObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
         }) { [weak self] (error) in
             guard let self = self else { return }
         }

@@ -7,10 +7,10 @@
 //
 
 protocol ShopListInteractorInput: class {
-    func getTours()
-    func getMoreTours()
+    func getShops()
+    func getMoreShops()
 }
 
 protocol ShopListInteractorOutput: class {
-    func tourObtained(models: [ShopListStructure], total: Int)
+    func shopObtained(models: [ShopListStructure], total: Int)
 }
