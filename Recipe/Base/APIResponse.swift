@@ -28,5 +28,3 @@ struct APIPagination: Codable {
         case nextURL = "next_url"
     }
 }
-
-
