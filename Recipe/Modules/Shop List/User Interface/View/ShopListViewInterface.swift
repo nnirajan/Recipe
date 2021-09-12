@@ -9,5 +9,6 @@
 protocol ShopListViewInterface: class {
     func showSkeletonLoading()
     func hideSkeletonLoading()
+    func showError(error: Error)
     func showShopList(models: [ShopListViewModel], total: Int)
 }

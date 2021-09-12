@@ -42,6 +42,7 @@ extension ShopListInteractor: ShopListInteractorInput {
             self.output?.shopObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
         }) { [weak self] (error) in
             guard let self = self else { return }
+            self.output?.errorObtained(error: error)
         }
     }
     
@@ -54,6 +55,7 @@ extension ShopListInteractor: ShopListInteractorInput {
             self.output?.shopObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
         }) { [weak self] (error) in
             guard let self = self else { return }
+            self.output?.errorObtained(error: error)
         }
     }
     

@@ -51,4 +51,9 @@ extension ShopListPresenter: ShopListInteractorOutput {
         view?.hideSkeletonLoading()
     }
     
+    func errorObtained(error: Error) {
+        view?.hideSkeletonLoading()
+        view?.showError(error: error)
+    }
+    
 }

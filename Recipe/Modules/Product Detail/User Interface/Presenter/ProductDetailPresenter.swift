@@ -41,4 +41,8 @@ extension ProductDetailPresenter: ProductDetailInteractorOutput {
         view?.showProductDetail(model: viewModel)
     }
     
+    func errorObtained(error: Error) {
+        view?.showError(error: error)
+    }
+    
 }

@@ -10,4 +10,5 @@ protocol ProductDetailViewInterface: class {
     func showSkeletonLoading()
     func hideSkeletonLoading()
     func showProductDetail(model: ProductDetailViewModel?)
+    func showError(error: Error)
 }

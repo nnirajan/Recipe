@@ -13,4 +13,5 @@ protocol ShopListInteractorInput: class {
 
 protocol ShopListInteractorOutput: class {
     func shopObtained(models: [ShopListStructure], total: Int)
+    func errorObtained(error: Error)
 }

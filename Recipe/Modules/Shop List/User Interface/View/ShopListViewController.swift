@@ -102,6 +102,14 @@ extension ShopListViewController: ShopListViewInterface {
         view.hideSkeleton()
     }
     
+    func showError(error: Error) {
+        reloadTableView()
+        alert(message: error.localizedDescription) { [weak self] in
+            guard let self = self else { return }
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     func showShopList(models: [ShopListViewModel], total: Int) {
         refreshControl.endRefreshing()
         shopListViewModels = models

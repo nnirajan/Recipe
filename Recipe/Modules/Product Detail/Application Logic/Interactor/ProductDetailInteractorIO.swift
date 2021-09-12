@@ -12,4 +12,5 @@ protocol ProductDetailInteractorInput: class {
 
 protocol ProductDetailInteractorOutput: class {
     func productDetailObtained(model: ProductDetailStructure?)
+    func errorObtained(error: Error)
 }

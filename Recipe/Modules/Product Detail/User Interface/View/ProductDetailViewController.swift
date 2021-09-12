@@ -68,4 +68,11 @@ extension ProductDetailViewController: ProductDetailViewInterface {
         descriptionLabel.attributedText = model?.description.htmlToAttributedString
     }
     
+    func showError(error: Error) {
+        alert(message: error.localizedDescription) { [weak self] in
+            guard let self = self else { return }
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
 }

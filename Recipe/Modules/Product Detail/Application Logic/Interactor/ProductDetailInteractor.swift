@@ -37,8 +37,9 @@ extension ProductDetailInteractor: ProductDetailInteractorInput {
                 guard let self = self else { return }
                 let structure = productDetail.map(self.convert)
                 self.output?.productDetailObtained(model: structure)
-            }) { (error) in
-                print(error)
+            }) { [weak self] (error) in
+                guard let self = self else { return }
+                self.output?.errorObtained(error: error)
             }
         }
     }
