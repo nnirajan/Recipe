@@ -134,6 +134,11 @@ extension ShopListViewController: SkeletonTableViewDataSource {
     
     /// tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tableView.backgroundView = nil
+        if shopListViewModels.count == 0 {
+            tableView.backgroundView = ShopListEmptyView()
+        }
+        
         return shopListViewModels.count
     }
     

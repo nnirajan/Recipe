@@ -42,7 +42,7 @@
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic of the Miniature Magic of the Miniature Magic of the Miniature" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-rZ-bdy">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic of the Miniature Magic of the Miniature Magic of the Miniature" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-rZ-bdy">
                                                                 <rect key="frame" x="5.5" y="230" width="332.5" height="38.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
@@ -58,7 +58,7 @@
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDw-s9-SD6">
                                                         <rect key="frame" x="0.0" y="288.5" width="343" height="286.5"/>
-                                                        <mutableString key="text">Suscipit lacinia consequat justo eleifend nisi, fringilla cras sagittis facilisi semper dictumst auctor primis etiam leo aptent turpis habitant. Elit pulvinar id Convallis hendrerit morbi ultricies dapibus nulla. A.
+                                                        <string key="text">Suscipit lacinia consequat justo eleifend nisi, fringilla cras sagittis facilisi semper dictumst auctor primis etiam leo aptent turpis habitant. Elit pulvinar id Convallis hendrerit morbi ultricies dapibus nulla. A.
 
 Fringilla, suspendisse. Tristique a cubilia sem vulputate nascetur mus consectetuer mauris cursus. Netus hendrerit mi nibh. Morbi commodo odio, aptent gravida. Duis magna rutrum quisque sociis.
 
@@ -66,7 +66,7 @@ Vel. Montes. Sociosqu. Libero. Ligula augue magna luctus lobortis tristique cong
 
 
  
-</mutableString>
+</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
