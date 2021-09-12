@@ -1,3 +1,3 @@
-# Recipe
+# Shop
 
-Get food recipes and the ingredient used
+Get shop product list and their detail
