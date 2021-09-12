@@ -25,6 +25,8 @@
 		91C0AB8326EDD934000B0952 /* TourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0AB7826EDD934000B0952 /* TourListViewController.swift */; };
 		91C0AB8426EDD934000B0952 /* TourList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C0AB7926EDD934000B0952 /* TourList.storyboard */; };
 		91C0AB8A26EDDBC1000B0952 /* TourListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0AB8926EDDBC1000B0952 /* TourListTableViewCell.swift */; };
+		91C0AB9026EDDFE5000B0952 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0AB8F26EDDFE5000B0952 /* UITableView+Extension.swift */; };
+		91C0AB9426EDE31D000B0952 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C0AB9326EDE31C000B0952 /* Array+Extension.swift */; };
 		91E9535826EC83FB002E34DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9535726EC83FB002E34DB /* AppDelegate.swift */; };
 		91E9536126EC83FC002E34DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536026EC83FC002E34DB /* Assets.xcassets */; };
 		91E9536426EC83FC002E34DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E9536226EC83FC002E34DB /* LaunchScreen.storyboard */; };
@@ -51,6 +53,8 @@
 		91C0AB7826EDD934000B0952 /* TourListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourListViewController.swift; sourceTree = "<group>"; };
 		91C0AB7926EDD934000B0952 /* TourList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TourList.storyboard; sourceTree = "<group>"; };
 		91C0AB8926EDDBC1000B0952 /* TourListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListTableViewCell.swift; sourceTree = "<group>"; };
+		91C0AB8F26EDDFE5000B0952 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		91C0AB9326EDE31C000B0952 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		91E9535426EC83FB002E34DB /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E9535726EC83FB002E34DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E9536026EC83FC002E34DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +218,15 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		91C0AB8E26EDDFDB000B0952 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91C0AB8F26EDDFE5000B0952 /* UITableView+Extension.swift */,
+				91C0AB9326EDE31C000B0952 /* Array+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		91E9534B26EC83FB002E34DB = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +248,7 @@
 		91E9535626EC83FB002E34DB /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				91C0AB8E26EDDFDB000B0952 /* Extension */,
 				91C0AB4E26EDB18A000B0952 /* Base */,
 				9184F4B426ED023300F9A5FE /* APIs */,
 				9184F48C26ECFC7800F9A5FE /* Resources */,
@@ -372,6 +386,7 @@
 			files = (
 				9184F4B626ED025500F9A5FE /* Auth.swift in Sources */,
 				91C0AB8126EDD934000B0952 /* TourListWireframeInput.swift in Sources */,
+				91C0AB9026EDDFE5000B0952 /* UITableView+Extension.swift in Sources */,
 				9184F48E26ECFC8A00F9A5FE /* WireframeInput.swift in Sources */,
 				91C0AB5026EDB1A0000B0952 /* APIResponse.swift in Sources */,
 				91C0AB7B26EDD934000B0952 /* TourListServiceType.swift in Sources */,
@@ -380,6 +395,7 @@
 				91C0AB7D26EDD934000B0952 /* TourListInteractor.swift in Sources */,
 				91C0AB7C26EDD934000B0952 /* TourListService.swift in Sources */,
 				91C0AB5726EDC521000B0952 /* TourAPI.swift in Sources */,
+				91C0AB9426EDE31D000B0952 /* Array+Extension.swift in Sources */,
 				91C0AB5426EDB4CE000B0952 /* EndPoint.swift in Sources */,
 				91C0AB8326EDD934000B0952 /* TourListViewController.swift in Sources */,
 				91C0AB8026EDD934000B0952 /* TourListWireframe.swift in Sources */,
