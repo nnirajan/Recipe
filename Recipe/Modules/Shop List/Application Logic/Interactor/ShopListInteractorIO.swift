@@ -9,8 +9,10 @@
 protocol ShopListInteractorInput: class {
     func getShops()
     func getMoreShops()
+    func getUsers()
 }
 
 protocol ShopListInteractorOutput: class {
     func shopObtained(models: [ShopListStructure], total: Int)
+    func user(model: [User])
 }

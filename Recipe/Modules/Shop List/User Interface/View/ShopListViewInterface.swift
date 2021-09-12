@@ -10,4 +10,5 @@ protocol ShopListViewInterface: class {
     func showSkeletonLoading()
     func hideSkeletonLoading()
     func showShopList(models: [ShopListViewModel], total: Int)
+    func user(model: [User])
 }

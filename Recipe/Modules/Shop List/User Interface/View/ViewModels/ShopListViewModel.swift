@@ -9,6 +9,6 @@ import Foundation
 
 // MARK: ShopListViewModel
 struct ShopListViewModel {
-    let id: Int?
-    let title, imageURL, description: String?
+    let id: Int
+    let title, imageURL, description: String
 }

@@ -23,10 +23,13 @@ class ShopListViewController: UIViewController {
     
     private var shopListViewModels = [ShopListViewModel]()
     
+    var users = [User]()
+    
     private var isMoreDataAvailable: Bool = false
     
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView?
+    @IBOutlet weak var dummyScrollView: UIScrollView!
     
     // MARK: VC's Life cycle
     override func viewDidLoad() {
@@ -50,7 +53,20 @@ class ShopListViewController: UIViewController {
     // MARK: Other Functions
     private func setup() {
         // all setup should be done here
+//        showDummyScrollViewOnly()
         setupTableView()
+    }
+    
+    // MARK: showTableViewViewOnly
+    private func showTableViewViewOnly() {
+        dummyScrollView?.isHidden = true
+        tableView?.isHidden = false
+    }
+    
+    // MARK: showDummyScrollViewOnly
+    private func showDummyScrollViewOnly() {
+        dummyScrollView?.isHidden = false
+        tableView?.isHidden = true
     }
     
     // MARK: setupTableView
@@ -84,6 +100,7 @@ extension ShopListViewController: ShopListViewInterface {
     }
     
     func hideSkeletonLoading() {
+//        showTableViewViewOnly()
         view.hideSkeleton()
     }
     
@@ -98,31 +115,44 @@ extension ShopListViewController: ShopListViewInterface {
         reloadTableView()
     }
     
+    func user(model: [User]) {
+        users = model
+        reloadTableView()
+    }
+    
 }
 
 // MARK: SkeletonTableViewDataSource
-extension ShopListViewController: SkeletonTableViewDataSource {
+extension ShopListViewController: UITableViewDataSource {
     
     /// sekeletonview
-    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return "ShopListTableViewCell"
-    }
+//    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 10
+//    }
+//
+//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+//        return "ShopListTableViewCell"
+//    }
     
     /// tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return shopListViewModels.count
+        users.count
+//        return shopListViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let shopListViewModel = shopListViewModels.element(at: indexPath.item)
+//        let shopListViewModel = shopListViewModels.element(at: indexPath.item)
+//
+//        let cell: ShopListTableViewCell = tableView.dequeueCell()
+//        cell.shopListViewModel = shopListViewModel
+//        return cell
+        
+        let user = users.element(at: indexPath.item)
         
         let cell: ShopListTableViewCell = tableView.dequeueCell()
-        cell.shopListViewModel = shopListViewModel
+        cell.user = user
         return cell
+        
     }
     
 }
@@ -138,15 +168,15 @@ extension ShopListViewController: UITableViewDelegate {
     
     // MARK: for show loading at bottom for pagination
     private func setupFooterView() {
-        let spinner = UIActivityIndicatorView(style: .medium)
+        let spinner = UIActivityIndicatorView(style: .gray)
         spinner.startAnimating()
-        spinner.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44)
+        spinner.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50)
         tableView?.tableFooterView = spinner
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let lastRowIndex = tableView.numberOfRows(inSection: 0)
-        if indexPath.row == (lastRowIndex - 1) && isMoreDataAvailable {
+        if indexPath.item == (lastRowIndex - 1) && isMoreDataAvailable {
             setupFooterView()
             presenter?.getMoreData()
         } else {

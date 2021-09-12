@@ -24,7 +24,7 @@ class ShopListInteractor {
     
     // MARK: Converting entities
     func convert(model: Shop) -> ShopListStructure {
-        ShopListStructure(id: model.id, title: model.title, imageURL: model.imageURL, description: model.description)
+        ShopListStructure(id: model.id ?? -1, title: model.title ?? "", imageURL: model.imageURL ?? "", description: model.description ?? "")
     }
     
 }
@@ -54,6 +54,15 @@ extension ShopListInteractor: ShopListInteractorInput {
             self.output?.shopObtained(models: self.shopListStructures, total: pagination?.total ?? 0)
         }) { [weak self] (error) in
             guard let self = self else { return }
+        }
+    }
+    
+    func getUsers() {
+        service.getUser(success: { (users, pagination) in
+            self.output?.user(model: users)
+            
+        }) { (error) in
+            print(error)
         }
     }
     

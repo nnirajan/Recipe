@@ -18,6 +18,7 @@ struct DeploymentMode: OptionSet {
     
     var rawValue: DeploymentMode.RawValue
     static let dev: DeploymentMode = DeploymentMode(rawValue: 0)
+    static let user: DeploymentMode = DeploymentMode(rawValue: 1)
 }
 
 // MARK: Configuration
@@ -36,6 +37,14 @@ struct Configuration {
                 apiKey: "",
                 baseURL: "https://api.artic.edu/api/v1/"
             )
+        case .user:
+            return Configuration(
+                clientID: "",
+                clientSecret: "",
+                apiKey: "",
+                baseURL: "https://reqres.in/api/"
+            )
+            
         default:
             return Configuration(
                 clientID: "",
