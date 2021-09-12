@@ -7,7 +7,7 @@
 
 import UIKit
 
-let deploymentMode: DeploymentMode = .user
+let deploymentMode: DeploymentMode = .dev
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

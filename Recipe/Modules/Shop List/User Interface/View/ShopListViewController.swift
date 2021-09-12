@@ -23,8 +23,6 @@ class ShopListViewController: UIViewController {
     
     private var shopListViewModels = [ShopListViewModel]()
     
-    var users = [User]()
-    
     private var isMoreDataAvailable: Bool = false
     
     // MARK: IBOutlets
@@ -115,44 +113,31 @@ extension ShopListViewController: ShopListViewInterface {
         reloadTableView()
     }
     
-    func user(model: [User]) {
-        users = model
-        reloadTableView()
-    }
-    
 }
 
 // MARK: SkeletonTableViewDataSource
 extension ShopListViewController: UITableViewDataSource {
     
     /// sekeletonview
-//    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 10
-//    }
-//
-//    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
-//        return "ShopListTableViewCell"
-//    }
+    func collectionSkeletonView(_ skeletonView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return "ShopListTableViewCell"
+    }
     
     /// tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        users.count
-//        return shopListViewModels.count
+        return shopListViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let shopListViewModel = shopListViewModels.element(at: indexPath.item)
-//
-//        let cell: ShopListTableViewCell = tableView.dequeueCell()
-//        cell.shopListViewModel = shopListViewModel
-//        return cell
-        
-        let user = users.element(at: indexPath.item)
-        
+        let shopListViewModel = shopListViewModels.element(at: indexPath.item)
+
         let cell: ShopListTableViewCell = tableView.dequeueCell()
-        cell.user = user
+        cell.shopListViewModel = shopListViewModel
         return cell
-        
     }
     
 }

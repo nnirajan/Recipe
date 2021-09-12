@@ -11,7 +11,6 @@ import Alamofire
 // MARK: EndPoint
 enum EndPoint {
     case shops(ofPage: Int)
-    case users
 
     var fieldsParams: String {
         "fields=id,title,image_url,description,last_updated,last_updated_source"
@@ -28,9 +27,8 @@ enum EndPoint {
     // MARK: HTTPMethod
     var method: HTTPMethod {
         switch self {
-        case .shops, .users:
+        case .shops:
             return .get
-        
         }
     }
     
@@ -39,8 +37,6 @@ enum EndPoint {
         switch self {
         case .shops(let ofPage):
             return "products?\(fieldsParams)&\(sort)&\(limit)&page=\(ofPage)"
-        case .users:
-            return "users?page=2"
         }
     }
     

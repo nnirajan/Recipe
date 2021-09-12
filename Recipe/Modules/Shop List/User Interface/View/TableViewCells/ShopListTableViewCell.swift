@@ -16,13 +16,6 @@ class ShopListTableViewCell: UITableViewCell {
         }
     }
     
-    var user: User? {
-        didSet{
-            titleLabel.text = user?.first_name
-            shopImageView.setImage(urlString: user?.avatar)
-        }
-    }
-    
     // MARK: IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var shopImageView: UIImageView!

@@ -29,9 +29,7 @@ extension ShopListPresenter: ShopListModuleInterface {
         if !isRefreshing {
             view?.showSkeletonLoading()
         }
-//        interactor?.getShops()
-        
-        interactor?.getUsers()
+        interactor?.getShops()
     }
     
     func getMoreData() {
@@ -47,11 +45,6 @@ extension ShopListPresenter: ShopListInteractorOutput {
         view?.hideSkeletonLoading()
         let viewModels = models.map(convert)
         view?.showShopList(models: viewModels, total: total)
-    }
-    
-    func user(model: [User]) {
-        view?.hideSkeletonLoading()
-        view?.user(model: model)
     }
     
 }

@@ -57,13 +57,4 @@ extension ShopListInteractor: ShopListInteractorInput {
         }
     }
     
-    func getUsers() {
-        service.getUser(success: { (users, pagination) in
-            self.output?.user(model: users)
-            
-        }) { (error) in
-            print(error)
-        }
-    }
-    
 }

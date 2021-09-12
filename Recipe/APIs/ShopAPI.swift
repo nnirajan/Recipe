@@ -55,43 +55,11 @@ extension ShopAPI {
             }) { error in
                 sendSuccess(pagination: nil)
             }
-            
-//            let a = EndPoint.users
-//
-//
-//            apiManager.request(endPoint: a, success: { (response: APIResponse<[Shop]>) in
-//
-//            }, failure: failure)
-            
         } else {
             /// sendSuccess if no internet
             sendSuccess(pagination: nil)
         }
     }
     
-    func getUser(success: @escaping ([User], APIPagination?)->(), failure: @escaping (Error)->()) {
-        let endpoint = EndPoint.users
-        
-        apiManager.request(endPoint: endpoint, success: { (response: APIResponse<[User]>) in
-            if let users = response.data {
-                success(users, nil)
-            }
-        }, failure: failure)
-    }
-    
-}
-
-struct User: Codable {
-    let id: Int?
-    let email, first_name, last_name, avatar: String?
-    
-//    enum CodingKeys: String, CodingKey {
-//        case id
-//        case title
-//        case imageURL = "image_url"
-//        case description
-//        case lastUpdated = "last_updated"
-//        case lastUpdatedSource = "last_updated_source"
-//    }
 }
 
