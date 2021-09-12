@@ -7,6 +7,8 @@
 
 import UIKit
 
+let deploymentMode: DeploymentMode = .dev
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: setupEntryPoint
     private func setupEntryPoint() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let recipeVC: UIViewController = RecipeListWireframe().getMainView()
-        let rootVC = UINavigationController(rootViewController: recipeVC)
+        let tourListVC: UIViewController = TourListWireframe().getMainView()
+        let rootVC = UINavigationController(rootViewController: tourListVC)
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
     }
