@@ -1,5 +1,5 @@
 //
-//  TourListViewController.swift
+//  ShopListViewController.swift
 //  Recipe
 //
 //  Created by ekbana on 9/12/21.
@@ -21,7 +21,7 @@ class ShopListViewController: UIViewController {
         return refreshControl
     }()
     
-    private var tourListViewModels = [TourListViewModel]()
+    private var tourListViewModels = [ShopListViewModel]()
     
     private var isMoreDataAvailable: Bool = false
     
@@ -87,7 +87,7 @@ extension ShopListViewController: ShopListViewInterface {
         view.hideSkeleton()
     }
     
-    func showTourList(models: [TourListViewModel], total: Int) {
+    func showTourList(models: [ShopListViewModel], total: Int) {
         refreshControl.endRefreshing()
         tourListViewModels = models
         if tourListViewModels.count < total {
@@ -109,7 +109,7 @@ extension ShopListViewController: SkeletonTableViewDataSource {
     }
     
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return "TourListTableViewCell"
+        return "ShopListTableViewCell"
     }
     
     /// tableview

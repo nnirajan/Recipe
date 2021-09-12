@@ -1,5 +1,5 @@
 //
-//  TourListTableViewCell.swift
+//  ShopListTableViewCell.swift
 //  Recipe
 //
 //  Created by ekbana on 9/12/21.
@@ -10,7 +10,7 @@ import UIKit
 class ShopListTableViewCell: UITableViewCell {
 
     // MARK: properties
-    var tourListViewModel: TourListViewModel? {
+    var tourListViewModel: ShopListViewModel? {
         didSet {
             setupData()
         }

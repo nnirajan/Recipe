@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: setupEntryPoint
     private func setupEntryPoint() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let tourListVC: UIViewController = TourListWireframe().getMainView()
+        let tourListVC: UIViewController = ShopListWireframe().getMainView()
         let rootVC = UINavigationController(rootViewController: tourListVC)
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()

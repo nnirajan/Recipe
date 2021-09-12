@@ -47,8 +47,6 @@ struct Configuration {
     }
 }
 
-//Example request: tours?limit=2
-
 // MARK: HTTPHeaderField
 enum HTTPHeaderField: String {
     case authorization = "Authorization"

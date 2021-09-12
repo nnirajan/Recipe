@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TourList-->
+        <!--ShopList-->
         <scene sceneID="R60-Pu-Hpy">
             <objects>
-                <viewController storyboardIdentifier="TourListViewController" title="TourList" id="HSb-ou-7T5" customClass="TourListViewController" customModule="Recipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopListViewController" title="ShopList" id="HSb-ou-7T5" customClass="ShopListViewController" customModule="Recipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
                         <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TourListTableViewCell" id="T7h-bh-SQ2" customClass="TourListTableViewCell" customModule="Recipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShopListTableViewCell" id="T7h-bh-SQ2" customClass="ShopListTableViewCell" customModule="Recipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="132.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T7h-bh-SQ2" id="GHj-US-eKX">
@@ -105,6 +105,10 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="jIy-Iy-gee" id="SKa-mI-lcu"/>
+                                            <outlet property="tourImageView" destination="vgR-lQ-NlQ" id="Z19-iH-wsL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <userDefinedRuntimeAttributes>
@@ -123,6 +127,9 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="kti-tQ-wf5" id="JpE-o9-pfw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

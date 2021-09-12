@@ -1,5 +1,5 @@
 //
-//  TourListWireframe.swift
+//  ShopListWireframe.swift
 //  Recipe
 //
 //  Created by ekbana on 9/12/21.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class TourListWireframe {
+class ShopListWireframe {
      weak var view: UIViewController!
 }
 
-extension TourListWireframe: TourListWireframeInput {
+extension ShopListWireframe: ShopListWireframeInput {
     
-    var storyboardName: String {return "TourList"}
+    var storyboardName: String {return "ShopList"}
     
     func getMainView() -> UIViewController {
-        let service = TourListService()
-        let interactor = TourListInteractor(service: service)
-        let presenter = TourListPresenter()
-        let viewController = viewControllerFromStoryboard(of: TourListViewController.self)
+        let service = ShopListService()
+        let interactor = ShopListInteractor(service: service)
+        let presenter = ShopListPresenter()
+        let viewController = viewControllerFromStoryboard(of: ShopListViewController.self)
         
         viewController.presenter = presenter
         interactor.output = presenter
