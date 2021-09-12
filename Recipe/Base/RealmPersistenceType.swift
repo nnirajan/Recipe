@@ -108,3 +108,14 @@ extension RealmPersistenceType {
     }
     
 }
+
+extension Object {
+    
+    func incrementID<T: Object>(ofType: T.Type, ofProperty: String) -> Int {
+        let realm = try! Realm()
+        let objects = realm.objects(T.self)
+        let lastId = objects.max(ofProperty: ofProperty) as Int? ?? 00
+        return lastId + 1
+    }
+    
+}

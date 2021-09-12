@@ -10,14 +10,18 @@ import Alamofire
 
 // MARK: EndPoint
 enum EndPoint {
-    case tours
+    case tours(ofPage: Int)
     
     var fieldsParams: String {
-        "fields=id,title,image,description,intro"
+        "fields=id,title,image_url,description,last_updated,last_updated_source"
     }
     
     var sort: String {
         "sort=id"
+    }
+    
+    var limit: String {
+        "limit=10"
     }
     
     // MARK: HTTPMethod
@@ -31,8 +35,8 @@ enum EndPoint {
     // MARK: Path
     var path: String {
         switch self {
-        case .tours:
-            return "tours?\(fieldsParams)&\(sort)"
+        case .tours(let ofPage):
+            return "products?\(fieldsParams)&\(sort)&\(limit)&page=\(ofPage)"
         }
     }
     
