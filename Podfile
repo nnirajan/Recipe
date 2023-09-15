@@ -8,7 +8,7 @@ target 'Recipe' do
   # Pods for Recipe
 	pod 'Alamofire'
 	pod 'SkeletonView'
-	pod 'RealmSwift', '=10.1.4'
+	pod 'RealmSwift'
   pod 'Kingfisher'
 
 end

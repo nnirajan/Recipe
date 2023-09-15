@@ -1,17 +1,17 @@
 PODS:
   - Alamofire (5.4.1)
   - Kingfisher (6.2.1)
-  - Realm (10.1.4):
-    - Realm/Headers (= 10.1.4)
-  - Realm/Headers (10.1.4)
-  - RealmSwift (10.1.4):
-    - Realm (= 10.1.4)
+  - Realm (10.41.1):
+    - Realm/Headers (= 10.41.1)
+  - Realm/Headers (10.41.1)
+  - RealmSwift (10.41.1):
+    - Realm (= 10.41.1)
   - SkeletonView (1.13.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
-  - RealmSwift (= 10.1.4)
+  - RealmSwift
   - SkeletonView
 
 SPEC REPOS:
@@ -25,10 +25,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
-  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
-  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
+  Realm: 0cb0b0b24f9303543a1f0dc17de8dec2d5bbf3f0
+  RealmSwift: 00627521cd456626f4cb2f7a7b18e1b07f2812a9
   SkeletonView: 2b14cb767a7da384d17d5d7e1db0d55a6cf9566a
 
-PODFILE CHECKSUM: dba5a9ed00b3230fe36da18f7370841aabefcc2e
+PODFILE CHECKSUM: 52ba063ac1c2011f36ede7b895cf9553906dedee
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.12.1
